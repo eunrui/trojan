@@ -217,12 +217,6 @@ func ClashSubInfo(c *gin.Context) {
 			result := fmt.Sprintf(`proxies:
 %s
 
-proxy-groups:
-  - name: PROXY
-    type: select
-    proxies:
-      - %s
-
 %s
 `, proxyData, name, clashRules())
 			c.String(200, result)
