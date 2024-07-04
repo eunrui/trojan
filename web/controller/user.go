@@ -214,7 +214,7 @@ func ClashSubInfo(c *gin.Context) {
 			}
 			proxyData := fmt.Sprintf("  - {name: %s, server: %s, port: %d, type: trojan, password: %s, sni: %s%s}",
 				"🇰🇷Korea", domain, port, password, domain, wsData)
-			diyData := fmt.Sprintf("  - {name: %s, server: %s, port: %d, type: trojan, password: %s, sni: %s%s}",
+			diyData := fmt.Sprintf("  - {name: %s, server: %s, port: %s, type: trojan, password: %s, sni: %s%s}",
 				"🇭🇰Hongkong", "566788.xyz", "38187", password, domain, wsData)
 			result := fmt.Sprintf(`proxies:
 %s
